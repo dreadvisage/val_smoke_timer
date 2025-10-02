@@ -1,0 +1,20 @@
+[package]
+name = "val_smoke_timer"
+version = "0.1.0"
+edition = "2024"
+authors = ["Tyler Sobojinski <tysobojinski@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/dreadvisage/val_smoke_timer"
+readme = "README.md"
+
+[dependencies]
+eframe = "0.32.3"
+egui = "0.32.3"
+# Use a more upstream version than 0.53.0 for bugfixes and more features
+rdev = { git = "https://github.com/Narsil/rdev", rev = "c14f2dc5c8100a96c5d7e3013de59d6aa0b9eae2", features = ["x11", "wayland"] }
+image = { version = "0.25.8", default-features = false, features = ["png"] }
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "0.9.7"
+directories = "6.0.0"
+anyhow = "1.0.100"
+display-info = "0.5.6"
